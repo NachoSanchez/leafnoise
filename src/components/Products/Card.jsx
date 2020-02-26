@@ -8,7 +8,7 @@ const Card = (props) => {
 
     return (
         <div 
-            className={ styles.card + ' ' + styles['fade-in']  } 
+            className={ styles.card  } 
             style = {{backgroundImage: `url(${props.bg})`}}
             key = { props.id }
         >

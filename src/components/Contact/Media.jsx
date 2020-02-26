@@ -7,7 +7,7 @@ const Media = (props) => {
             href={ props.href } 
             target="_blank" 
             rel="noopener noreferrer"
-            className={ styles.media + ' ' + styles['fade-in'] }>
+            className={ styles.media }>
             
             <img src={ props.icon } alt={ props.type }/>
 

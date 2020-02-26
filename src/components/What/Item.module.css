@@ -1,5 +1,7 @@
 
 .item {
+    animation: fade-in 1.4s;
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -27,10 +29,6 @@
     to {opacity: 1;}
 }
   
-.fade-in-element {
-    animation: fade-in 1.4s;
-}
-
 @media(max-width: 800px){
     .item {
         width: 80%;
