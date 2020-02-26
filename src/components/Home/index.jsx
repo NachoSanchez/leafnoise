@@ -8,7 +8,7 @@ const Home = () => {
 
     return english ? (
         <section id="home" className={styles.home}>
-            <div className={styles['home-text-container']}>
+            <div >
                 <h1>Creating future in technology</h1>
                 <p>
                     We offer an all-around solution, from the development to the maintenance 
@@ -19,7 +19,7 @@ const Home = () => {
         </section>
     ) : (
         <section id="home" className={styles.home} >
-            <div className={styles['home-text-container']}>
+            <div >
                 <h1>Creando el futuro en tecnología</h1>
                 <p>
                     Ofrecemos una solución integral, desde el desarrollo hasta el mantenimiento, 
