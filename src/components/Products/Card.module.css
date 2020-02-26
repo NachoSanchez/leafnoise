@@ -8,6 +8,7 @@
     flex-direction: column;
     height: 70vh;
     justify-content: space-between;
+    margin-top: 30px;
     padding: 2em 2rem;
     width: 35%;
 }
