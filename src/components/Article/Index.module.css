@@ -1,0 +1,45 @@
+.title {
+    text-align: center;
+    padding-top: 6em;
+    width: 100%;
+}
+
+.article {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.article img {
+    width: 45%;
+}
+
+.article div {
+    width: 40%;
+}
+
+.article div h4 {
+    color: yellowgreen;
+    margin: 15px;
+}
+
+.article div p {
+    font-size: 14px;
+    margin: 15px;
+}
+
+@media (max-width: 800px){
+
+    .article img {
+        display: none
+    }
+
+    .article div {
+        margin-top: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+}
