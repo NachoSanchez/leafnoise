@@ -19,7 +19,7 @@ const Home = () => {
         </section>
     ) : (
         <section id="home" className={styles.home} >
-            <div>
+            <div className={styles['home-text-container']}>
                 <h1>Creando el futuro en tecnología</h1>
                 <p>
                     Ofrecemos una solución integral, desde el desarrollo hasta el mantenimiento, 
