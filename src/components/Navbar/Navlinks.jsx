@@ -3,24 +3,39 @@ import { LanguageContext } from '../../contexts/LanguageContext';
 
 const Navlinks= () => {
     const { english } = useContext(LanguageContext);
+
+    const ENG = [
+        {title: 'What we do', href: '#que-hacemos'},
+        {title: 'Services', href: '#servicios'},
+        {title: 'Products', href: '#productos'},
+        {title: 'Clients', href: '#clientes'},
+        {title: 'Contact', href: '#contacto'}
+    ]
+
+    const ESP = [
+        {title: 'Qué hacemos', href: '#que-hacemos'},
+        {title: 'Servicios', href: '#servicios'},
+        {title: 'Productos', href: '#productos'},
+        {title: 'Clientes', href: '#clientes'},
+        {title: 'Contacto', href: '#contacto'}
+    ]
+
+    const links = english ? ENG : ESP
+
     
-    return english ? (
+    return  (
        <ul>
-           <li><a href="#que-hacemos">What we do</a></li>
-           <li><a href="#servicios">Services</a></li>
-           <li><a href="#productos">Products</a></li>
-           <li><a href="#clientes">Clients</a></li>
-           <li><a href="#contacto">Contact us</a></li>
+           {
+               links.map( link => (
+                   <li>
+                       <a href={ link.href }>
+                           { link.title }
+                       </a>
+                   </li>
+               ))
+           }
        </ul> 
-    ) : (
-        <ul>
-            <li><a href="#que-hacemos">Qué hacemos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#clientes">Clientes</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    )
+    ) 
 }
 
 export default Navlinks;
